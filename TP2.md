@@ -45,13 +45,13 @@ Exemple : SELECT * FROM film_actor RIGHT JOIN film ON film_actor.film_id = film.
 
 ### FULL OUTER INCLUSIVE
 Permet de récupérer toutes les lignes de la table A et toutes les lignes de la table B (peu importe si elles correspondent ou non).  
-Exemple : SELECT * FROM film FULL JOIN language ON film.language_id = language.language_id; (marhce po)    
+Exemple : SELECT * FROM film FULL JOIN language ON film.language_id = language.language_id; (marhce po avec phpmyadmin) ou SELECT f.film_id, f.title, fa.actor_id FROM film f LEFT JOIN film_actor fa ON f.film_id = fa.film_id UNION SELECT f.film_id, f.title, fa.actor_id FROM film_actor fa RIGHT JOIN film f ON f.film_id = fa.film_id;  
 
 ---
 
 ### FULL OUTER EXCLUSIVE
 Permet de récupérer uniquement les lignes des deux tables qui n’ont pas de correspondance.  
-Exemple : SELECT * FROM film FULL JOIN language ON film.language_id = language.language_id WHERE film.language_id IS NULL; (marhce po)    
+Exemple : SELECT * FROM film FULL JOIN language ON film.language_id = language.language_id WHERE film.language_id IS NULL; (marhce po avec phpmyadmin) ou SELECT f.film_id, f.title, fa.actor_id FROM film f LEFT JOIN film_actor fa ON f.film_id = fa.film_id WHERE fa.film_id IS NULL UNION SELECT f.film_id, f.title, fa.actor_id FROM film_actor fa RIGHT JOIN film f ON f.film_id = fa.film_id WHERE f.film_id IS NULL;    
 
 ---
 
