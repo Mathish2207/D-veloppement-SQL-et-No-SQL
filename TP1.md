@@ -1,5 +1,3 @@
-# Développement SQL et NoSQL
-
 ## Table des matières
 - [TP 1](#tp-1)
 - [Instructions SQL](#instructions-sql)
@@ -98,3 +96,4 @@ Exemple :
 ---
 
 **Fin du TP 1**
+
