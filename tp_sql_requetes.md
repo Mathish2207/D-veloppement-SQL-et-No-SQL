@@ -195,14 +195,14 @@ WHERE birth_date IS NULL;
 
 ## 27. Sélectionner le nombre d’employés par département
 ```sql
-SELECT dept_no, COUNT(*) FROM dept_emp GROUP BY dept_no;
-
-
+SELECT dept_no, COUNT(*) 
+FROM dept_emp 
+GROUP BY dept_no;
 ``` (9)
 28. Sélectionner le salaire maximum et minimum des employés
 ```sql
-SELECT MAX(salary), MIN(salary) FROM salaries;
-
+SELECT MAX(salary), MIN(salary) 
+FROM salaries;
 ``` (1)
 29. Sélectionner le salaire maximum et minimum par employés
 ```sql
