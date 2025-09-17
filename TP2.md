@@ -33,13 +33,13 @@ Exemple : SELECT * FROM film_actor RIGHT JOIN film ON film_actor.film_id = film.
 
 ### LEFT EXCLUSIVE
 Permet de récupérer uniquement les lignes de la table A qui n’ont pas de correspondance dans la table B.  
-Exemple : SELECT * FROM film_actor LEFT JOIN film ON film_actor.film_id = film.film_id WHERE film_actor.film_id IS NULL;    
+Exemple : SELECT * FROM film_actor LEFT JOIN film ON film_actor.film_id = film.film_id WHERE film.film_id IS NULL;    
 
 ---
 
 ### RIGHT EXCLUSIVE
 Permet de récupérer uniquement les lignes de la table B qui n’ont pas de correspondance dans la table A.  
-Exemple : SELECT * FROM film_actor RIGHT JOIN film ON film_actor.film_id = film.film_id WHERE film.film_id IS NULL;    
+Exemple : SELECT * FROM film_actor RIGHT JOIN film ON film_actor.film_id = film.film_id WHERE film_actor.film_id IS NULL;    
 
 ---
 
